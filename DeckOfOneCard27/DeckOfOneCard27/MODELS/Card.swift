@@ -8,7 +8,11 @@
 
 import Foundation
 
-class Card: Codable {
+struct TopLevelJSON: Decodable {
+    let cards: [Card]
+}
+
+class Card: Decodable {
     let suit: String
     let value: String
     let code: String
