@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X8y-Vt-LPG">
-                                <rect key="frame" x="41.5" y="76" width="331" height="497"/>
+                                <rect key="frame" x="41.5" y="76" width="331" height="372.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="X8y-Vt-LPG" secondAttribute="height" multiplier="8:12" id="u7X-GG-gps"/>
+                                    <constraint firstAttribute="width" secondItem="X8y-Vt-LPG" secondAttribute="height" multiplier="8:9" id="u7X-GG-gps"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VQb-Je-TXj">
-                                <rect key="frame" x="20" y="593" width="374" height="189"/>
+                                <rect key="frame" x="20" y="468.5" width="374" height="189"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s2u-Wh-Eu0">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="27"/>
