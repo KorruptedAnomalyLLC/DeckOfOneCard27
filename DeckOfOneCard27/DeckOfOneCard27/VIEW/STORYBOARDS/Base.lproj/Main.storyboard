@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="IJn-53-LJ9">
             <objects>
-                <viewController id="Ljx-fC-YF0" sceneMemberID="viewController">
+                <viewController id="Ljx-fC-YF0" customClass="CardViewController" customModule="DeckOfOneCard27" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aaH-Iu-w6P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VQb-Je-TXj">
-                                <rect key="frame" x="20" y="593" width="374" height="169"/>
+                                <rect key="frame" x="20" y="593" width="374" height="189"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s2u-Wh-Eu0">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="27"/>
@@ -79,16 +79,19 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqq-u3-xj8">
-                                        <rect key="frame" x="0.0" y="117" width="374" height="52"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
-                                        <state key="normal" title="Draw A Card">
+                                        <rect key="frame" x="0.0" y="117" width="374" height="72"/>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
+                                        <state key="normal" title="Draw a Card">
                                             <color key="titleColor" red="0.094605518590000007" green="0.81193329020000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="drawButtonTapped:" destination="Ljx-fC-YF0" eventType="touchUpInside" id="gfm-Dg-3nj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="X8y-Vt-LPG" firstAttribute="centerX" secondItem="aaH-Iu-w6P" secondAttribute="centerX" id="9hS-MJ-psx"/>
                             <constraint firstItem="X8y-Vt-LPG" firstAttribute="width" secondItem="aaH-Iu-w6P" secondAttribute="width" multiplier="0.8" id="EbH-Pi-gzs"/>
@@ -99,6 +102,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WZU-V2-3ex"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="X8y-Vt-LPG" id="mug-fx-JIx"/>
+                        <outlet property="codeLabel" destination="AQs-XH-fnQ" id="jG8-wP-Hmy"/>
+                        <outlet property="suitLabel" destination="u9n-lJ-uxX" id="FRa-2U-vVt"/>
+                        <outlet property="valueLabel" destination="vZa-FE-gO6" id="46j-Lb-Mcl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiI-mN-0i1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

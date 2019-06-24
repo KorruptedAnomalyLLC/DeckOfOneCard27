@@ -28,7 +28,7 @@ class CardController {
         
         // Step 4 - Get the data from the URL request
         do {
-              let data = try Data(contentsOf: url)
+            let data = try Data(contentsOf: url)
             
             let jDecoder = JSONDecoder()
             
@@ -61,6 +61,7 @@ class CardController {
             
             let image = UIImage(data: data)
             
+            // Dont forget this!!
             completion(image)
         } catch {
             print("Error fetching image for card: \(card.code)")
